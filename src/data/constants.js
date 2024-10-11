@@ -5,6 +5,7 @@ import Project3 from "../Assets/Projects/project3.png";
 import Project4 from "../Assets/Projects/project4.png";
 import Project5 from "../Assets/Projects/project5.png";
 import Project6 from "../Assets/Projects/project6.png";
+import Project7 from "../Assets/Projects/project7.png";
 
 // Skills Assets
 import mongoDBSVG from "../Assets/Skills/mongodb.svg";
@@ -207,6 +208,18 @@ export const projects = [
 
   {
     id: 1,
+    title: "Galeto Landing Page",
+    date: "feb 2024 - feb 2024",
+    description: "Galeto Landing Page",
+    image: Project7,
+    tags: ["React Js", "Tailwind Css"],
+    category: "frontend",
+    github: "https://github.com/Sachinnegi825/Gelato-Landing-Page",
+    webapp: "https://galeto-landing-page.netlify.app/",
+  },
+
+  {
+    id: 2,
     title: "SocialSnap",
     date: "feb 2023 - Mar 2023",
     description: "SocialSnap",
@@ -218,7 +231,7 @@ export const projects = [
   },
 
   {
-    id: 2,
+    id: 3,
     title: "FoodZilla",
     date: "March 2023 - Apr 2023",
     description: "FoodZilla - a food app which fetched data from swiggy api ",
@@ -229,7 +242,7 @@ export const projects = [
     webapp: "https://sachin-foodzilla.netlify.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Tea Titans",
     date: "Feb 2022 - Jul 2022",
     description: "Tea Titans a tea company landing page with greate visuals",
@@ -240,7 +253,7 @@ export const projects = [
     webapp: "https://frontend-project-tea-titans.netlify.app/",
   },
   {
-    id: 4,
+    id: 5,
     title: "Spider hitting Game",
     date: "Jun 2022 - Jul 2022",
     description:
@@ -253,7 +266,7 @@ export const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: "Blog App",
     date: "Jul 2024 - Aug 2024",
     description:
