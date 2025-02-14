@@ -14,7 +14,7 @@ import {
 import HeroImg from "../../Assets/About/photome.png";
 import Typewriter from "typewriter-effect";
 import { Bio } from "../../data/constants";
-import Resume from "../../Assets/About/Sachin_CV.pdf";
+import Resume from "../../Assets/About/Sachin_Negi_Resume.pdf";
 
 const HeroSection = () => {
   return (
