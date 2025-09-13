@@ -1,21 +1,21 @@
-// Project assests
-import Project1 from "../assests/Projects/project-1.png";
-import Project2 from "../assests/Projects/project2.png";
-import Project3 from "../assests/Projects/project3.png";
-import Project4 from "../assests/Projects/project4.png";
-import Project5 from "../assests/Projects/project5.png";
-import Project6 from "../assests/Projects/project6.png";
-import Project7 from "../assests/Projects/project7.png";
-import Project8 from "../assests/Projects/project8.png";
-import Project9 from "../assests/Projects/project9.png";
+// Project assets
+import Project1 from "../assets/Projects/project-1.png";
+import Project2 from "../assets/Projects/project2.png";
+import Project3 from "../assets/Projects/project3.png";
+import Project4 from "../assets/Projects/project4.png";
+import Project5 from "../assets/Projects/project5.png";
+import Project6 from "../assets/Projects/project6.png";
+import Project7 from "../assets/Projects/project7.png";
+import Project8 from "../assets/Projects/project8.png";
+import Project9 from "../assets/Projects/project9.png";
 
-// Skills assests
-import mongoDBSVG from "../assests/Skills/mongodb.svg";
-import expressSVG from "../assests/Skills/express.svg";
-import reactSVG from "../assests/Skills/react.svg";
-import githubPNG from "../assests/Skills/github-mark-white.svg";
-import postmanSVG from "../assests/Skills/postman.svg";
-import tailwindSVG from "../assests/Skills/tailwindcss.svg";
+// Skills assets
+import mongoDBSVG from "../assets/Skills/mongodb.svg";
+import expressSVG from "../assets/Skills/express.svg";
+import reactSVG from "../assets/Skills/react.svg";
+import githubPNG from "../assets/Skills/github-mark-white.svg";
+import postmanSVG from "../assets/Skills/postman.svg";
+import tailwindSVG from "../assets/Skills/tailwindcss.svg";
 
 export const Bio = {
   name: "Sachin Negi",
@@ -57,7 +57,7 @@ export const skills = [
       {
         name: "Bootstrap",
         image:
-          "https://getbootstrap.com/docs/5.3/assests/brand/bootstrap-logo-shadow.png",
+          "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
       },
       {
         name: "React Js",
@@ -124,7 +124,7 @@ export const skills = [
       },
       {
         name: "GitHub",
-        // image: "https://github.githubassests.com/images/modules/logos_page/GitHub-Mark.png",
+        // image: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
         image: githubPNG,
       },
 
