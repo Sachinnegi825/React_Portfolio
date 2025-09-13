@@ -10,7 +10,7 @@ import ResumePDF from "../assets/About/Sachin_Negi_Resume.pdf";
 
 // --- Asset Imports ---
 // Make sure your hero image path is correct.
-import HeroImg from "../Assets/About/photome.png";
+import HeroImg from "../assets/About/photome.png";
 
 const Hero = () => {
   // Hooks for the interactive parallax image effect
