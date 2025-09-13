@@ -1,10 +1,6 @@
-import React from "react";
 import { motion } from "framer-motion";
-// Note: Ensure this import path matches your project structure.
-// The data was previously in '../data', not '../data/constants'.
 import { skills } from "../data/constants";
 
-// Variants for the container of the skill cards to orchestrate staggered animations
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {

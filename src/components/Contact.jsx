@@ -31,6 +31,7 @@ const Contact = () => {
             href={Bio.linkedin}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="View Sachin Negi's LinkedIn profile"
             className="text-3xl text-slate-400 hover:text-cyan-300 transition-colors"
           >
             <FaLinkedin />
@@ -39,6 +40,7 @@ const Contact = () => {
             href={Bio.github}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="View Sachin Negi's GitHub profile"
             className="text-3xl text-slate-400 hover:text-cyan-300 transition-colors"
           >
             <FaGithub />
@@ -47,6 +49,7 @@ const Contact = () => {
             href={Bio.twitter}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="View Sachin Negi's Twitter profile"
             className="text-3xl text-slate-400 hover:text-cyan-300 transition-colors"
           >
             <FaTwitter />
@@ -55,6 +58,7 @@ const Contact = () => {
             href={Bio.insta}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="View Sachin Negi's Instagram profile"
             className="text-3xl text-slate-400 hover:text-cyan-300 transition-colors"
           >
             <FaInstagram />

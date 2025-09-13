@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { FaGithub, FaLink } from "react-icons/fa";
 import { projects } from "../data/constants";
@@ -23,6 +22,7 @@ const Projects = () => {
           >
             <div className="relative overflow-hidden">
               <img
+                loading="lazy"
                 src={project.image}
                 alt={project.title}
                 className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
@@ -50,6 +50,7 @@ const Projects = () => {
                   href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`View source code for ${project.title} on GitHub`}
                   className="text-slate-400 hover:text-cyan-300 transition-colors text-2xl"
                 >
                   <FaGithub />
@@ -58,6 +59,7 @@ const Projects = () => {
                   href={project.webapp}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={`View live demo of ${project.title}`}
                   className="text-slate-400 hover:text-cyan-300 transition-colors text-2xl"
                 >
                   <FaLink />
