@@ -46,15 +46,17 @@ const Projects = () => {
                 ))}
               </div>
               <div className="mt-auto flex justify-end items-center gap-4">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`View source code for ${project.title} on GitHub`}
-                  className="text-slate-400 hover:text-cyan-300 transition-colors text-2xl"
-                >
-                  <FaGithub />
-                </a>
+                {project.github && (
+                  <a
+                    href={project?.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`View source code for ${project?.title} on GitHub`}
+                    className="text-slate-400 hover:text-cyan-300 transition-colors text-2xl"
+                  >
+                    <FaGithub />
+                  </a>
+                )}
                 <a
                   href={project.webapp}
                   target="_blank"

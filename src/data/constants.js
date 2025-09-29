@@ -1,4 +1,6 @@
 // Project assets
+import Oasis from "../assets/Projects/oasis.webp";
+
 import Project1 from "../assets/Projects/project-1.webp";
 import Project2 from "../assets/Projects/project2.webp";
 import Project3 from "../assets/Projects/project3.webp";
@@ -216,6 +218,24 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: "Oasis Platform",
+    date: "Apr 2025 - Aug 2025",
+    description:
+      "Oasis Platform is a full-stack MERN learning platform with secure authentication, role-based access, tiered learning paths, AI chatbot support, course enrollments, quizzes, and a built-in peer community — all wrapped in a responsive web and mobile-friendly UI.",
+    image: Oasis,
+    tags: [
+      "React Js",
+      "Node Js",
+      "Express Js",
+      "Mongo DB",
+      "Google Gemini API",
+      "Tailwind Css",
+    ],
+    category: "mern stack",
+    webapp: "https://oasis-platform.netlify.app/",
+  },
+  {
+    id: 1,
     title: "Blog App",
     date: "Jul 2024 - Aug 2024",
     description:
@@ -227,7 +247,7 @@ export const projects = [
     webapp: "https://mernstackblog.netlify.app/",
   },
   {
-    id: 1,
+    id: 2,
     title: "Youtube Clone",
     date: "feb 2023 - feb 2023",
     description: "Youtube clone",
@@ -239,7 +259,7 @@ export const projects = [
   },
 
   {
-    id: 2,
+    id: 3,
     title: "DocWeb",
     date: "Nov 2024 - Nov 2024",
     description:
@@ -252,7 +272,7 @@ export const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "Galeto Landing Page",
     date: "feb 2024 - feb 2024",
     description: "Galeto Landing Page",
@@ -264,7 +284,7 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Thence",
     date: "Apr 2023 - Apr 2023",
     description:
@@ -277,7 +297,7 @@ export const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: "SocialSnap",
     date: "feb 2023 - Mar 2023",
     description: "SocialSnap",
@@ -289,7 +309,7 @@ export const projects = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: "FoodZilla",
     date: "March 2023 - Apr 2023",
     description: "FoodZilla - a food app which fetched data from swiggy api ",
@@ -301,7 +321,7 @@ export const projects = [
   },
 
   {
-    id: 7,
+    id: 8,
     title: "Tea Titans",
     date: "Feb 2022 - Jul 2022",
     description: "Tea Titans a tea company landing page with greate visuals",
@@ -312,7 +332,7 @@ export const projects = [
     webapp: "https://frontend-project-tea-titans.netlify.app/",
   },
   {
-    id: 8,
+    id: 9,
     title: "Spider hitting Game",
     date: "Jun 2022 - Jul 2022",
     description:
