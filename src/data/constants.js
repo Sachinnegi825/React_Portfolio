@@ -175,11 +175,9 @@ export const experiences = [
     company: "DDT Software & E Comm Pvt Ltd .",
     date: "Nov 2023 - June 2024",
     desc: [
-      "Built reusable and responsive user interfaces.",
-      "Integrated frontend and backend systems through robust API implementation, enhancing system performance and reliability.",
-      "Developed a diverse skill set with a proven track record of delivering results.",
-      "Championed innovative technologies and best practices, fostering a culture of continuous learning and excellence.",
-      "Projects I contributed to : https://exampreptool.com/, https://scanconnect.in",
+      "     Spearheaded frontend development for ExamPrepTool (a MERN-based LMS), optimizing React workflows to boost Lighthouse performance scores from 65 to 92.",
+      "Developed a complex Admin Dashboard for DP World, implementing role-based access control (RBAC) and real-time data visualization tables to streamline client operations.",
+      "Built reusable UI libraries for ScanConnect and refactored legacy code, reducing frontend bundle size by 35% and increasing user engagement by 40%.",
     ],
   },
 ];
