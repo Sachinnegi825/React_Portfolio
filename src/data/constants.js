@@ -6,7 +6,7 @@ import Project2 from "../assets/Projects/project2.webp";
 import Project3 from "../assets/Projects/project3.webp";
 import Project4 from "../assets/Projects/project4.webp";
 import Project5 from "../assets/Projects/project5.webp";
-import Project6 from "../assets/Projects/project6.webp";
+import Project6 from "../assets/Projects/project6.png";
 import Project7 from "../assets/Projects/project7.webp";
 import Project8 from "../assets/Projects/project8.webp";
 import Project9 from "../assets/Projects/project9.webp";
@@ -234,15 +234,14 @@ export const projects = [
   },
   {
     id: 1,
-    title: "Blog App",
     date: "Jul 2024 - Aug 2024",
-    description:
-      "A Mern Stack log App consists of features like login,logout,post creation,edit post,add comment and many more.",
-    image: Project6,
-    tags: ["React Js", "Node Js", "Express Js", "Mongo DB", "Tailwind Css"],
+    title: "BlogSpace Editorial",
+  description: "A high-performance minimalist blogging engine inspired by Swiss design principles. Features secure HttpOnly cookie authentication with token rotation, Cloudinary-integrated media handling, and a sophisticated threaded commentary system with author verification.",
+  image: Project6,
+  tags: ["React 19", "Node.js", "Tailwind 4.0", "MongoDB", "Cloudinary", "Framer Motion"],
     category: "mern stack",
     github: "https://github.com/Sachinnegi825/Mern-Stack-Blog-App",
-    webapp: "https://mernstackblog.netlify.app/",
+    webapp: "https://blogspace-mern.netlify.app/",
   },
   {
     id: 2,
