@@ -27,6 +27,8 @@ import githubPNG from "../assets/Skills/github-mark-white.svg";
 import postmanSVG from "../assets/Skills/postman.svg";
 import tailwindSVG from "../assets/Skills/tailwindcss.svg";
 
+import ResumePDF from "../assets/About/sachin_negi_resume.pdf";
+
 export const Bio = {
   name: "Sachin Negi",
   roles: [
@@ -38,8 +40,7 @@ export const Bio = {
   description:
     "Motivated software developer with 1+ years of experience in web development. Passionate about delivering high-quality solutions and continuously improving technical skills to contribute effectively in dynamic environments.",
   github: "https://github.com/Sachinnegi825",
-  resume:
-    "https://drive.google.com/file/d/1zC-pzbVqilW-6xsmC68h-QbaGbfGqhVG/view?usp=drive_link",
+  resume: ResumePDF,
   linkedin: "https://www.linkedin.com/in/sachin-negi-54aaba222/",
   twitter: "https://x.com/SACHINN68557499",
   insta: "https://www.instagram.com/sachinnegi_019/",

@@ -43,7 +43,12 @@ const Hero = () => {
           </div>
 
           <div className="flex gap-4 mt-8 border-t border-slate-700/50 pt-6">
-            <a href={Bio.resume} className="text-sm font-black uppercase tracking-tighter border-2 border-slate-800 px-4 py-2 hover:bg-slate-800 hover:text-white transition-all">
+            <a 
+              href={Bio.resume} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-sm font-black uppercase tracking-tighter border-2 border-slate-800 px-4 py-2 hover:bg-slate-800 hover:text-white transition-all"
+            >
               Full Biography (Resume)
             </a>
             <a href={Bio.github} className="text-sm font-black uppercase tracking-tighter bg-slate-800 text-white px-4 py-2 hover:bg-slate-700 transition-all">
