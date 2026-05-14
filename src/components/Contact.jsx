@@ -1,71 +1,58 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { FaLinkedin, FaGithub, FaTwitter, FaInstagram, FaEnvelope } from "react-icons/fa";
 import { Bio } from "../data/constants";
-import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-24 text-center">
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.7 }}
-        viewport={{ once: true }}
-      >
-        <h2 className="text-4xl font-bold mb-4 text-slate-100">Get In Touch</h2>
-        <div className="w-24 h-1 bg-cyan-300 mx-auto mb-8"></div>
-
-        <p className="text-lg text-slate-400 max-w-2xl mx-auto my-8">
-          My inbox is always open! Whether you have a question, a project
-          proposal, or just want to say hello, I'll do my best to get back to
-          you.
+    <div id="contact" className="flex flex-col items-center gap-6 md:gap-10 px-4">
+      <div className="w-full flex items-center gap-4 md:gap-6">
+        <div className="h-0.5 flex-grow bg-slate-800"></div>
+        <h2 className="text-3xl md:text-5xl serif italic tracking-tighter text-center">Letter to the Editor</h2>
+        <div className="h-0.5 flex-grow bg-slate-800"></div>
+      </div>
+      
+      <div className="max-w-2xl text-center">
+        <p className="text-xl md:text-2xl serif leading-relaxed mb-6 md:mb-8">
+          "The most powerful tool a developer possesses is the ability to connect. If you wish to discuss a vision, a project, or a digital revolution, I am at your service."
         </p>
-        <a
-          href="mailto:sachinnegi825@gmail.com"
-          className="inline-block border border-cyan-300 text-cyan-300 text-lg font-mono px-8 py-4 rounded-md hover:bg-cyan-300/10 transition duration-300"
-        >
-          Say Hello
-        </a>
-        <div className="flex justify-center gap-8 mt-12">
+        
+        <div className="inline-block border-y-4 border-double border-slate-800 py-3 md:py-4 px-6 md:px-10 w-full md:w-auto overflow-hidden">
           <a
-            href={Bio.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="View Sachin Negi's LinkedIn profile"
-            className="text-3xl text-slate-400 hover:text-cyan-300 transition-colors"
+            href="mailto:sachinnegi825@gmail.com"
+            className="flex items-center justify-center gap-3 text-xl sm:text-2xl md:text-4xl serif font-black hover:text-accent-red transition-colors break-all"
           >
-            <FaLinkedin />
-          </a>
-          <a
-            href={Bio.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="View Sachin Negi's GitHub profile"
-            className="text-3xl text-slate-400 hover:text-cyan-300 transition-colors"
-          >
-            <FaGithub />
-          </a>
-          <a
-            href={Bio.twitter}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="View Sachin Negi's Twitter profile"
-            className="text-3xl text-slate-400 hover:text-cyan-300 transition-colors"
-          >
-            <FaTwitter />
-          </a>
-          <a
-            href={Bio.insta}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="View Sachin Negi's Instagram profile"
-            className="text-3xl text-slate-400 hover:text-cyan-300 transition-colors"
-          >
-            <FaInstagram />
+            <FaEnvelope className="text-lg md:text-2xl flex-shrink-0" /> sachinnegi825@gmail.com
           </a>
         </div>
-      </motion.div>
-    </section>
+      </div>
+      
+      <div className="flex flex-col items-center gap-6 mt-8 w-full">
+        <p className="text-[10px] md:text-sm font-black uppercase tracking-[0.4em] text-slate-500 text-center">Correspond Via Social Channels</p>
+        <div className="flex flex-wrap justify-center gap-4 md:gap-8">
+          {[
+            { icon: FaLinkedin, url: Bio.linkedin },
+            { icon: FaGithub, url: Bio.github },
+            { icon: FaTwitter, url: Bio.twitter },
+            { icon: FaInstagram, url: Bio.insta }
+          ].map((social, i) => (
+            <a
+              key={i}
+              href={social.url}
+              target="_blank"
+              rel="noreferrer"
+              className="p-3 md:p-4 border-2 border-slate-800 hover:bg-slate-800 hover:text-white transition-all transform hover:-rotate-6"
+            >
+              <social.icon size={20} className="md:w-6 md:h-6" />
+            </a>
+          ))}
+        </div>
+      </div>
+
+      
+      <div className="mt-10 italic text-slate-400">
+        Signed, — Sachin Negi
+      </div>
+    </div>
   );
 };
 

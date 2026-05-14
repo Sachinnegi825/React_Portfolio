@@ -1,47 +1,43 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { experiences } from "../data/constants";
 
 const Experience = () => {
   return (
-    <section id="experience" className="py-24">
-      <h2 className="text-4xl font-bold text-center mb-4 text-slate-100">
-        Professional Journey
+    <div id="experience" className="flex flex-col gap-8">
+      <h2 className="text-4xl serif font-black border-b-4 border-double border-slate-700/50 pb-2 mb-6">
+        The Professional <span className="italic underline decoration-accent-red decoration-4">Chronicles</span>
       </h2>
-      <div className="w-24 h-1 bg-cyan-300 mx-auto mb-16"></div>
-
-      <div className="relative max-w-3xl mx-auto">
-        <div className="absolute left-4 md:left-1/2 w-1 h-full bg-slate-700/50"></div>
-        {experiences.map((exp, index) => (
-          <motion.div
-            key={exp.id}
-            className="mb-12 flex"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <div className="flex-shrink-0 w-8 h-8 rounded-full bg-slate-900 border-2 border-cyan-300 flex items-center justify-center absolute left-4 md:left-1/2 -translate-x-1/2">
-              <div className="w-3 h-3 bg-cyan-300 rounded-full"></div>
-            </div>
-            <div className="ml-12 w-full">
-              <div className="p-6 bg-slate-800/50 backdrop-blur-md rounded-lg border border-slate-700 shadow-md">
-                <h3 className="text-xl font-bold text-slate-100">{exp.role}</h3>
-                <p className="text-md font-medium text-cyan-300 mb-1">
+      
+      <div className="space-y-12">
+        {experiences.map((exp) => (
+          <div key={exp.id} className="group border-b border-slate-700/50 pb-8 last:border-0">
+            <div className="flex justify-between items-start mb-4">
+              <div className="w-2/3">
+                <h3 className="text-2xl serif font-bold group-hover:text-accent-red transition-colors">
+                  {exp.role}
+                </h3>
+                <p className="text-sm font-black uppercase tracking-widest text-slate-500">
                   {exp.company}
                 </p>
-                <p className="text-sm text-slate-500 mb-3">{exp.date}</p>
-                <ul className="list-disc list-inside text-sm text-slate-400 space-y-1 text-left">
-                  {exp.desc.map((d, i) => (
-                    <li key={i}>{d}</li>
-                  ))}
-                </ul>
+              </div>
+              <div className="text-right w-1/3">
+                <p className="text-xs font-bold bg-slate-100 dark:bg-slate-800 px-2 py-1 inline-block border border-slate-700">
+                  {exp.date}
+                </p>
               </div>
             </div>
-          </motion.div>
+            
+            <div className="columns-1 md:columns-2 gap-8 mt-4 text-sm leading-relaxed">
+               {exp.desc.map((bullet, i) => (
+                 <p key={i} className="mb-4 first-letter:text-2xl first-letter:serif first-letter:float-left first-letter:mr-2">
+                   {bullet}
+                 </p>
+               ))}
+            </div>
+          </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 

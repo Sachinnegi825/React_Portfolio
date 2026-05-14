@@ -1,112 +1,112 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --paper-bg: #fdfcf0; /* Classic paper color */
+  --ink-color: #1a1a1a;
+  --accent-red: #d90429; /* Traditional newspaper red */
+  --border-ink: #333333;
+}
+
+/* Dark Mode Version of Editorial */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper-bg: #0f172a;
+    --ink-color: #f1f5f9;
+    --accent-red: #f43f5e;
+    --border-ink: #334155;
+  }
+}
 
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Inter", sans-serif;
-  background-color: #0a192f; /* A very dark blue */
-  color: #cbd5e1; /* slate-300 */
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--paper-bg);
+  color: var(--ink-color);
+  margin: 0;
+  line-height: 1.6;
 }
 
-/* This is the magic for our ambient background */
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
+h1, h2, h3, h4, .serif {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+}
+
+.newspaper-border {
+  border: 1.5px solid var(--border-ink);
+}
+
+.newspaper-border-bottom {
+  border-bottom: 1.5px solid var(--border-ink);
+}
+
+.newspaper-border-top {
+  border-top: 1.5px solid var(--border-ink);
+}
+
+.newspaper-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0; /* Traditional newspaper layout has no gap, uses borders */
+  max-width: 1400px;
+  margin: 0 auto;
+  border-left: 1.5px solid var(--border-ink);
+  border-right: 1.5px solid var(--border-ink);
+}
+
+.news-column {
+  padding: 1.5rem;
+  border-right: 1.5px solid var(--border-ink);
+  border-bottom: 1.5px solid var(--border-ink);
+}
+
+.news-column:last-child {
+  border-right: none;
+}
+
+/* Ticker Animation */
+@keyframes ticker {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.ticker-wrap {
   width: 100%;
-  height: 100vh;
-  z-index: -1;
-  /* Two soft, glowing radial gradients */
-  background: radial-gradient(
-      circle at 15% 25%,
-      rgba(45, 212, 191, 0.15),
-      transparent 40%
-    ),
-    radial-gradient(
-      circle at 85% 75%,
-      rgba(139, 92, 246, 0.15),
-      transparent 40%
-    );
+  overflow: hidden;
+  background-color: var(--ink-color);
+  color: var(--paper-bg);
+  padding: 0.5rem 0;
 }
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: #0a192f;
-}
-::-webkit-scrollbar-thumb {
-  background: #1e293b; /* slate-800 */
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #334155; /* slate-700 */
+.ticker-move {
+  display: inline-block;
+  white-space: nowrap;
+  animation: ticker 30s linear infinite;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.8rem;
 }
 
-.stars {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  display: block;
-  background-repeat: repeat;
-  background-position: 0 0;
+/* Image styling for editorial */
+.editorial-img {
+  filter: grayscale(100%) contrast(1.2);
+  transition: filter 0.3s ease;
+  border: 1px solid var(--border-ink);
 }
 
-/* Layer 1: Small, dense, slow stars (far away) */
-.stars.layer1 {
-  background-image: radial-gradient(
-      1px 1px at 20px 30px,
-      #eee,
-      rgba(0, 0, 0, 0)
-    ),
-    radial-gradient(1px 1px at 40px 70px, #fff, rgba(0, 0, 0, 0)),
-    radial-gradient(1px 1px at 50px 160px, #ddd, rgba(0, 0, 0, 0));
-  background-size: 320px 320px;
-  animation: animateStars 120s linear infinite;
+.editorial-img:hover {
+  filter: grayscale(0%) contrast(1);
 }
 
-/* Layer 2: Medium, less dense, medium speed stars */
-.stars.layer2 {
-  background-image: radial-gradient(
-      2px 2px at 10px 90px,
-      #eee,
-      rgba(0, 0, 0, 0)
-    ),
-    radial-gradient(2px 2px at 130px 210px, #fff, rgba(0, 0, 0, 0));
-  background-size: 400px 400px;
-  animation: animateStars 80s linear infinite;
+/* Custom Selection */
+::selection {
+  background-color: var(--accent-red);
+  color: white;
 }
 
-@keyframes animateStars {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(
-      -400px
-    ); /* Adjust based on background-size for seamless loop */
-  }
-}
 
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: #020617;
-}
-::-webkit-scrollbar-thumb {
-  background: #1e293b; /* slate-800 */
-  border-radius: 10px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #334155; /* slate-700 */
-}
+

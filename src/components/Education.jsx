@@ -1,57 +1,37 @@
-import { motion } from "framer-motion";
-import { education } from "../data/constants"; // Path is preserved as requested
+import React from "react";
+import { education } from "../data/constants";
 
 const Education = () => {
   return (
-    <section id="education" className="py-24">
-      <h2 className="text-4xl font-bold text-center mb-4 text-slate-100">
-        Education
+    <div className="flex flex-col gap-8">
+      <h2 className="text-4xl serif font-black border-b-4 border-double border-slate-700/50 pb-2 mb-6 text-right">
+        Academic <span className="italic">Records</span>
       </h2>
-      <div className="w-24 h-1 bg-cyan-300 mx-auto mb-16"></div>
-
-      <div className="max-w-3xl mx-auto space-y-8 px-4 md:px-0">
-        {education.map((edu, index) => (
-          // The main card container
-          <motion.div
-            key={edu.id}
-            className="p-6 bg-slate-800/50 backdrop-blur-md rounded-lg border border-slate-700"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: index * 0.1 }}
-            viewport={{ once: true }}
-            whileHover={{
-              y: -5,
-              borderColor: "rgba(45, 212, 191, 0.5)", // cyan-300 with opacity
-            }}
-          >
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-              <div className="flex items-center gap-4">
-                <img
-                  src={edu.img}
-                  alt={edu.school}
-                  className="w-16 h-16 rounded-md object-contain p-1 bg-slate-300 flex-shrink-0"
-                />
-                <div className="flex-grow">
-                  <h3 className="text-lg font-bold text-slate-100">
-                    {edu.school}
-                  </h3>
-                  <p className="text-md font-medium text-slate-400">
-                    {edu.degree}
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-4 md:mt-0 text-right flex-shrink-0">
-                <p className="text-md font-semibold text-cyan-300">
-                  {edu.grade}
-                </p>
-                <p className="text-sm text-slate-500">{edu.date}</p>
-              </div>
+      
+      <div className="space-y-10">
+        {education.map((edu) => (
+          <div key={edu.id} className="border-l-4 border-slate-800 pl-6 pb-4">
+            <h3 className="text-xl serif font-bold mb-1">{edu.school}</h3>
+            <p className="text-sm font-bold text-accent-red uppercase tracking-wider mb-2">
+              {edu.degree}
+            </p>
+            <div className="flex justify-between items-center text-xs font-black uppercase tracking-widest text-slate-500">
+              <span>Class of {edu.date.split('-')[1] || edu.date}</span>
+              <span className="border border-slate-400 px-2 py-0.5">{edu.grade}</span>
             </div>
-          </motion.div>
+            {edu.desc && (
+              <p className="mt-4 text-xs italic leading-relaxed text-slate-500">
+                "{edu.desc}"
+              </p>
+            )}
+          </div>
         ))}
       </div>
-    </section>
+      
+      <div className="mt-8 p-4 bg-slate-100 dark:bg-slate-800 border-2 border-slate-800 text-center uppercase tracking-[0.2em] font-black text-xs">
+        Validated Credentials
+      </div>
+    </div>
   );
 };
 
