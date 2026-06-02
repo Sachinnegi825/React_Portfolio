@@ -33,17 +33,19 @@ export const Bio = {
   name: "Sachin Negi",
   roles: [
     "Software Developer",
+    2000,
     "Frontend Developer",
+    2000,
     "Backend Developer",
-    "Mern Stack Developer",
+    2000,
+    "MERN Stack Developer",
+    2000,
   ],
   description:
-    "Motivated software developer with 1+ years of experience in web development. Passionate about delivering high-quality solutions and continuously improving technical skills to contribute effectively in dynamic environments.",
+    "Motivated software developer with 1.7 years of MERN stack experience and 8 months as a Frontend Developer. Passionate about delivering high-quality solutions and continuously improving technical skills to contribute effectively in dynamic environments.",
   github: "https://github.com/Sachinnegi825",
   resume: ResumePDF,
   linkedin: "https://www.linkedin.com/in/sachin-negi-54aaba222/",
-  twitter: "https://x.com/SACHINN68557499",
-  insta: "https://www.instagram.com/sachinnegi_019/",
   facebook: "https://www.facebook.com/sachin.negi.524596/",
 };
 
@@ -176,7 +178,7 @@ export const experiences = [
     company: "DDT Software & E Comm Pvt Ltd .",
     date: "Nov 2023 - June 2024",
     desc: [
-      "     Spearheaded frontend development for ExamPrepTool (a MERN-based LMS), optimizing React workflows to boost Lighthouse performance scores from 65 to 92.",
+      "Spearheaded frontend development for ExamPrepTool (a MERN-based LMS), optimizing React workflows to boost Lighthouse performance scores from 65 to 92.",
       "Developed a complex Admin Dashboard for DP World, implementing role-based access control (RBAC) and real-time data visualization tables to streamline client operations.",
       "Built reusable UI libraries for ScanConnect and refactored legacy code, reducing frontend bundle size by 35% and increasing user engagement by 40%.",
     ],
@@ -248,7 +250,7 @@ export const projects = [
     id: 2,
     title: "Youtube Clone",
     date: "feb 2023 - feb 2023",
-    description: "Youtube clone",
+    description: "A feature-rich YouTube clone with video browsing, search functionality, and responsive video playback — replicating the core YouTube experience with a modern React architecture.",
     image: Project1,
     tags: ["React Js", "Redux", "Tailwind Css"],
     category: "frontend",
@@ -273,7 +275,7 @@ export const projects = [
     id: 4,
     title: "Galeto Landing Page",
     date: "feb 2024 - feb 2024",
-    description: "Galeto Landing Page",
+    description: "A visually striking landing page for an artisanal gelato brand, featuring smooth scroll animations, a curated product showcase, and a modern, appetizing design aesthetic.",
     image: Project7,
     tags: ["React Js", "Tailwind Css"],
     category: "frontend",
@@ -286,7 +288,7 @@ export const projects = [
     title: "Thence",
     date: "Apr 2023 - Apr 2023",
     description:
-      "A fully-responsive landing page consists of features like registration form,redirection, accordian",
+      "A fully-responsive landing page featuring an interactive registration form, dynamic page redirection, and an accessible accordion component — built to demonstrate clean UI patterns.",
     image: Project8,
     tags: ["React Js"],
     category: "frontend",
@@ -298,7 +300,7 @@ export const projects = [
     id: 6,
     title: "SocialSnap",
     date: "feb 2023 - Mar 2023",
-    description: "SocialSnap",
+    description: "A social media dashboard application with real-time feed rendering, user profiles, and interactive post engagement — built with Redux for robust state management.",
     image: Project2,
     tags: ["React Js", "Redux", "Tailwind Css"],
     category: "frontend",
@@ -310,7 +312,7 @@ export const projects = [
     id: 7,
     title: "FoodZilla",
     date: "March 2023 - Apr 2023",
-    description: "FoodZilla - a food app which fetched data from swiggy api ",
+    description: "A food delivery app that integrates with the Swiggy API to display live restaurant data, menus, and ratings — featuring real-time search and category filtering.",
     image: Project3,
     tags: ["React Js", "Redux", "Tailwind Css"],
     category: "frontend",
@@ -322,7 +324,7 @@ export const projects = [
     id: 8,
     title: "Tea Titans",
     date: "Feb 2022 - Jul 2022",
-    description: "Tea Titans a tea company landing page with greate visuals",
+    description: "An elegant landing page for a premium tea brand, showcasing rich visuals, smooth parallax sections, and a refined color palette that reflects the brand's artisanal identity.",
     image: Project4,
     tags: ["Html", "Css", "Javascript"],
     category: "frontend",
@@ -334,7 +336,7 @@ export const projects = [
     title: "Spider hitting Game",
     date: "Jun 2022 - Jul 2022",
     description:
-      "A Spider hitting Game where you get point on htting the spider",
+      "An interactive browser-based game where players earn points by clicking on spiders that appear at random positions — built with vanilla JavaScript and DOM manipulation.",
     image: Project5,
     tags: ["Html", "Css", "Javascript"],
     category: "frontend",
@@ -343,10 +345,3 @@ export const projects = [
   },
 ];
 
-export const TimeLineData = [
-  { year: 2017, text: "Started my journey" },
-  { year: 2018, text: "Worked as a freelance developer" },
-  { year: 2019, text: "Founded JavaScript Mastery" },
-  { year: 2020, text: "Shared my projects with the world" },
-  { year: 2021, text: "Started my own platform" },
-];

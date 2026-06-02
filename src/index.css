@@ -28,6 +28,17 @@ body {
   color: var(--ink-color);
   margin: 0;
   line-height: 1.6;
+  /* Subtle paper texture using layered radial gradients */
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(0,0,0,0.01) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 50%, rgba(0,0,0,0.01) 0%, transparent 50%),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 30px,
+      rgba(0,0,0,0.008) 30px,
+      rgba(0,0,0,0.008) 31px
+    );
 }
 
 h1, h2, h3, h4, .serif {
@@ -67,10 +78,15 @@ h1, h2, h3, h4, .serif {
   border-right: none;
 }
 
-/* Ticker Animation */
+/* Column rule dividers for multi-column text */
+.column-rule {
+  column-rule: 1px solid var(--border-ink);
+}
+
+/* ── Seamless Ticker Animation ─────────────────────────── */
 @keyframes ticker {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 .ticker-wrap {
@@ -84,17 +100,18 @@ h1, h2, h3, h4, .serif {
 .ticker-move {
   display: inline-block;
   white-space: nowrap;
-  animation: ticker 30s linear infinite;
+  animation: ticker 40s linear infinite;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-size: 0.8rem;
+  /* Content is duplicated in JSX so the loop is seamless */
 }
 
-/* Image styling for editorial */
+/* ── Image styling for editorial ───────────────────────── */
 .editorial-img {
   filter: grayscale(100%) contrast(1.2);
-  transition: filter 0.3s ease;
+  transition: filter 0.5s ease;
   border: 1px solid var(--border-ink);
 }
 
@@ -102,11 +119,41 @@ h1, h2, h3, h4, .serif {
   filter: grayscale(0%) contrast(1);
 }
 
-/* Custom Selection */
+/* ── Custom Selection ──────────────────────────────────── */
 ::selection {
   background-color: var(--accent-red);
   color: white;
 }
 
+/* ── Skill icon style ──────────────────────────────────── */
+.skill-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
 
+/* ── Company / school logo ─────────────────────────────── */
+.org-logo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid var(--border-ink);
+  background: white;
+  flex-shrink: 0;
+}
 
+/* ── Project card lift on hover ────────────────────────── */
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+/* ── Accent text color utility ─────────────────────────── */
+.text-accent-red {
+  color: var(--accent-red);
+}
