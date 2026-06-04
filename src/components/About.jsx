@@ -15,10 +15,7 @@ const About = () => {
         The Developer&apos;s Sketch
       </h2>
       <p className="text-sm font-medium leading-relaxed italic text-slate-600 dark:text-slate-400">
-        &quot;I am a passionate Software Developer with 1.7 years of MERN stack
-        experience and 8 months as a Frontend Developer, crafting dynamic and
-        scalable web applications. I thrive on transforming complex ideas into
-        clean, user-friendly interfaces.&quot;
+        &quot;I am a Software Developer with 1.7 years of MERN stack and 8 months of frontend experience, building dynamic, scalable web applications. I specialize in transforming complex data workflows and AI integrations into clean, high-performance UIs.&quot;
       </p>
       <div className="h-px bg-slate-700/50 w-1/2 mx-auto my-2"></div>
       <p className="text-xs uppercase tracking-widest font-bold text-center">

@@ -41,8 +41,7 @@ export const Bio = {
     "MERN Stack Developer",
     2000,
   ],
-  description:
-    "Motivated software developer with 1.7 years of MERN stack experience and 8 months as a Frontend Developer. Passionate about delivering high-quality solutions and continuously improving technical skills to contribute effectively in dynamic environments.",
+  description:"Results-driven MERN developer with 1.7 years of full-stack and 8 months of frontend experience. Adept at architecting scalable web apps, designing robust APIs, and integrating AI models to deliver high-performance solutions.",
   github: "https://github.com/Sachinnegi825",
   resume: ResumePDF,
   linkedin: "https://www.linkedin.com/in/sachin-negi-54aaba222/",
@@ -161,14 +160,14 @@ export const experiences = [
     role: "Fullstack Developer",
     company: "Sidlabs LLP",
     date: "Oct 2024 - Current",
-    desc: [
-      "Developed responsive UIs and robust back-end solutions using ReactJS, Next.js, Node.js, and Express, improving application performance by 20%",
-      "Designed and implemented RESTful APIs, optimizing server-side processes and reducing response time by 15%",
-      "Integrated front-end and back-end components to create seamless user experiences, enhancing functionality and user engagement by 20%",
-      "Collaborated with design and product teams to improve UI/UX, increasing overall user satisfaction by 15%",
-      "Optimized application performance through code splitting, lazy loading, and database indexing techniques.",
-      "Contributed to a custom design system, ensuring consistency and improving code maintainability across both front-end and back-end",
-    ],
+   desc: [
+  "Architected and deployed highly responsive web applications—including a complex evaluation dashboard—using React, Next.js, Node.js, and MongoDB, improving overall application performance by 20%.",
+  "Engineered secure backend architectures to seamlessly integrate advanced LLMs (Gemini and Llama 3), enabling automated data extraction and complex AI-driven workflows.",
+  "Designed and implemented scalable RESTful APIs in Node.js and Express, optimizing heavy bi-directional data flows and reducing server response times by 15%.",
+  "Optimized frontend and backend performance for high-traffic applications through React code splitting, lazy loading, and targeted MongoDB database indexing techniques.",
+  "Managed end-to-end product development in a fast-paced environment, taking complete ownership from initial database schema design to final UI deployment.",
+  "Contributed to custom component libraries and design systems, ensuring strict UI consistency, improving code maintainability, and increasing overall user engagement by 20%."
+]
   },
   {
     id: 2,
