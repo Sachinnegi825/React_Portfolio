@@ -1,5 +1,6 @@
 // Project assets
 import Oasis from "../assets/Projects/oasis.webp";
+import First from "../assets/Projects/first.png";
 
 import Project1 from "../assets/Projects/project-1.webp";
 import Project2 from "../assets/Projects/project2.webp";
@@ -218,6 +219,26 @@ export const education = [
 export const projects = [
   {
     id: 0,
+    title: "Samvaad Live",
+    date: "Aug 2026",
+    description:
+      "A real-time chat application with a bold, comic-book aesthetic. Features instant messaging via Socket.IO, typing indicators, read receipts, text search, message editing/deletion, emoji reactions, pinned messages, and browser-native voice note recording.",
+    image: First,
+    tags: [
+      "React Js",
+      "Node.js",
+      "Socket.IO",
+      "MongoDB",
+      "Tailwind CSS",
+      "Zustand",
+      "Cloudinary",
+    ],
+    category: "mern stack",
+    github: "https://github.com/Sachinnegi825/Samvaad-Live",
+    webapp: "https://samvaad-live.netlify.app/",
+  },
+  {
+    id: 1,
     title: "Oasis Platform",
     date: "Apr 2025 - Aug 2025",
     description:
@@ -235,7 +256,7 @@ export const projects = [
     webapp: "https://oasis-platform.netlify.app/",
   },
   {
-    id: 1,
+    id: 2,
     date: "Jul 2024 - Aug 2024",
     title: "BlogSpace Editorial",
   description: "A high-performance minimalist blogging engine inspired by Swiss design principles. Features secure HttpOnly cookie authentication with token rotation, Cloudinary-integrated media handling, and a sophisticated threaded commentary system with author verification.",
@@ -246,7 +267,7 @@ export const projects = [
     webapp: "https://blogspace-mern.netlify.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Youtube Clone",
     date: "feb 2023 - feb 2023",
     description: "A feature-rich YouTube clone with video browsing, search functionality, and responsive video playback — replicating the core YouTube experience with a modern React architecture.",
@@ -258,7 +279,7 @@ export const projects = [
   },
 
   {
-    id: 3,
+    id: 4,
     title: "DocWeb",
     date: "Nov 2024 - Nov 2024",
     description:
@@ -271,7 +292,7 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     title: "Galeto Landing Page",
     date: "feb 2024 - feb 2024",
     description: "A visually striking landing page for an artisanal gelato brand, featuring smooth scroll animations, a curated product showcase, and a modern, appetizing design aesthetic.",
@@ -283,7 +304,7 @@ export const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: "Thence",
     date: "Apr 2023 - Apr 2023",
     description:
@@ -296,7 +317,7 @@ export const projects = [
   },
 
   {
-    id: 6,
+    id: 7,
     title: "SocialSnap",
     date: "feb 2023 - Mar 2023",
     description: "A social media dashboard application with real-time feed rendering, user profiles, and interactive post engagement — built with Redux for robust state management.",
@@ -308,7 +329,7 @@ export const projects = [
   },
 
   {
-    id: 7,
+    id: 8,
     title: "FoodZilla",
     date: "March 2023 - Apr 2023",
     description: "A food delivery app that integrates with the Swiggy API to display live restaurant data, menus, and ratings — featuring real-time search and category filtering.",
@@ -320,7 +341,7 @@ export const projects = [
   },
 
   {
-    id: 8,
+    id: 9,
     title: "Tea Titans",
     date: "Feb 2022 - Jul 2022",
     description: "An elegant landing page for a premium tea brand, showcasing rich visuals, smooth parallax sections, and a refined color palette that reflects the brand's artisanal identity.",
@@ -331,7 +352,7 @@ export const projects = [
     webapp: "https://frontend-project-tea-titans.netlify.app/",
   },
   {
-    id: 9,
+    id: 10,
     title: "Spider hitting Game",
     date: "Jun 2022 - Jul 2022",
     description:
