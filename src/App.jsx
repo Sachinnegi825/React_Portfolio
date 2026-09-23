@@ -9,7 +9,16 @@ import Education from "./components/Education";
 import Contact from "./components/Contact";
 
 const TICKER_TEXT =
-  "BREAKING: SACHIN NEGI LAUNCHES REVOLUTIONARY PORTFOLIO THEME • OPEN FOR NEW OPPORTUNITIES • MERN STACK EXPERT • REACT 19 READY • CHECK OUT FEATURED PROJECTS BELOW • ";
+  "BREAKING: FULLSTACK ENGINEER AVAILABLE FOR HIRE • 1.11 YRS MERN EXPERIENCE • BUILT AI PIPELINES WITH GEMINI + LLAMA 3 • REACT 19 • NODE.JS • NEXT.JS • AWS EC2 / S3 • REDIS + BULLMQ QUEUE SYSTEMS • OPEN TO FULL-TIME & FREELANCE ROLES • ";
+
+const METRICS = [
+  { value: "10+", label: "Projects Shipped" },
+  { value: "25+", label: "APIs Built" },
+  { value: "20%", label: "Perf Gains" },
+  { value: "92", label: "Lighthouse Score" },
+  { value: "35%", label: "Bundle Size Cut" },
+  { value: "2", label: "Companies" },
+];
 
 const sectionVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -54,6 +63,20 @@ function App() {
           The Daily Negi
         </motion.h1>
 
+        {/* Open to Work Banner */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          className="inline-flex items-center gap-2 bg-accent-red text-white text-[10px] font-black uppercase tracking-[0.2em] px-4 py-1.5 mb-4"
+        >
+          <span className="relative flex h-2 w-2">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+          </span>
+          Open to Opportunities — Full-Time &amp; Freelance
+        </motion.div>
+
         <div className="border-y-4 border-double border-slate-700/50 py-3 mb-4 text-[9px] md:text-sm font-black uppercase tracking-[0.2em] md:tracking-[0.3em] flex flex-wrap justify-center gap-x-4 md:gap-x-8 gap-y-2 px-2">
           <span>Software Engineering</span>
           <span className="hidden xs:inline">•</span>
@@ -72,13 +95,37 @@ function App() {
         </nav>
       </header>
 
-      {/* Breaking News Ticker — content duplicated for seamless loop */}
+      {/* Breaking News Ticker */}
       <div className="ticker-wrap border-y-1.5 border-slate-700/50">
         <div className="ticker-move">
           {TICKER_TEXT}
           {TICKER_TEXT}
         </div>
       </div>
+
+      {/* Impact Metrics Bar */}
+      <div className="container mx-auto border-x-1.5 border-b-1.5 border-slate-700/50">
+        <div className="grid grid-cols-3 md:grid-cols-6 divide-x divide-slate-700/50 border-b border-slate-700/50">
+          {METRICS.map((m, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: i * 0.08 }}
+              className="metric-cell flex flex-col items-center justify-center py-4 px-2 text-center"
+            >
+              <span className="metric-value text-2xl md:text-3xl font-black serif leading-none">
+                {m.value}
+              </span>
+              <span className="metric-label text-[8px] md:text-[10px] font-black uppercase tracking-widest mt-1">
+                {m.label}
+              </span>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+
 
       <main className="newspaper-grid">
         {/* Main Lead Story (Hero) */}
@@ -153,7 +200,7 @@ function App() {
           © {currentYear} The Daily Negi Publishing Group • All Rights Reserved
         </p>
         <p className="text-[10px] text-slate-500 mt-1 uppercase tracking-widest">
-          Designed & Built by Sachin Negi
+          Designed &amp; Built by Sachin Negi
         </p>
       </footer>
     </div>

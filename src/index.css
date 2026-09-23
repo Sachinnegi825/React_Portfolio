@@ -157,3 +157,33 @@ h1, h2, h3, h4, .serif {
 .text-accent-red {
   color: var(--accent-red);
 }
+
+/* ── Impact Metrics Bar ─────────────────────────────────── */
+.metric-cell {
+  transition: background-color 0.3s ease;
+  cursor: default;
+}
+
+.metric-cell:hover {
+  background-color: var(--accent-red);
+}
+
+.metric-value {
+  color: var(--ink-color);
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-block;
+}
+
+.metric-label {
+  color: #64748b; /* slate-500 */
+  transition: color 0.3s ease;
+}
+
+.metric-cell:hover .metric-value {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+.metric-cell:hover .metric-label {
+  color: rgba(255, 255, 255, 0.9);
+}

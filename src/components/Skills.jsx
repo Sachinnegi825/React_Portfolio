@@ -61,7 +61,20 @@ const Skills = () => {
         ))}
       </motion.div>
 
-      <div className="mt-4 p-3 border border-slate-700 text-center italic text-xs">
+      {/* Editor's Pick */}
+      <div className="mt-4 p-3 border-2 border-double border-slate-700 bg-slate-100 dark:bg-slate-800">
+        <div className="text-[9px] font-black uppercase tracking-[0.3em] text-accent-red mb-1">
+          ★ Editor's Pick
+        </div>
+        <p className="text-xs font-black uppercase tracking-tight leading-snug">
+          AI Integration Specialist
+        </p>
+        <p className="text-[10px] italic text-slate-500 mt-1 leading-relaxed">
+          Production experience integrating Gemini API, Groq API &amp; LLMs into full-stack MERN applications.
+        </p>
+      </div>
+
+      <div className="mt-3 p-3 border border-slate-700 text-center italic text-xs">
         &quot;Highly skilled in building modern digital infrastructure.&quot;
       </div>
     </div>

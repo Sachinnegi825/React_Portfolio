@@ -2,6 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { experiences } from "../data/constants";
 
+const IMPACT_BADGES = {
+  1: ["20% Perf Boost", "AI Pipeline (Gemini + Llama 3)", "End-to-End Ownership"],
+  2: ["Lighthouse 65 → 92", "35% Bundle Cut", "RBAC + DP World Dashboard"],
+};
+
 const cardVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: (i) => ({
@@ -56,6 +61,20 @@ const Experience = () => {
                 </p>
               </div>
             </div>
+
+            {/* Impact Badges */}
+            {IMPACT_BADGES[exp.id] && (
+              <div className="flex flex-wrap gap-2 mb-4">
+                {IMPACT_BADGES[exp.id].map((badge, j) => (
+                  <span
+                    key={j}
+                    className="text-[9px] font-black uppercase tracking-tighter bg-accent-red text-white px-2 py-0.5 border border-accent-red"
+                  >
+                    ★ {badge}
+                  </span>
+                ))}
+              </div>
+            )}
 
             <div className="columns-1 md:columns-2 gap-8 mt-4 text-sm leading-relaxed column-rule">
               {exp.desc.map((bullet, j) => (
