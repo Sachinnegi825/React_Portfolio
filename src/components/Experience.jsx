@@ -18,15 +18,19 @@ const cardVariants = {
 
 const Experience = () => {
   return (
-    <div id="experience" className="flex flex-col gap-8">
-      <h2 className="text-4xl serif font-black border-b-4 border-double border-slate-700/50 pb-2 mb-6">
-        The Professional{" "}
-        <span className="italic underline decoration-accent-red decoration-4">
-          Chronicles
-        </span>
+    <div id="experience" className="flex flex-col mt-4">
+      <div className="border-y-2 border-black dark:border-white py-2 mb-8 flex justify-between items-center uppercase tracking-[0.3em] text-[10px] md:text-xs font-bold">
+        <span>The Daily Developer</span>
+        <span>Career Trajectory</span>
+        <span className="hidden md:inline-block">Section II</span>
+      </div>
+
+      <h2 className="text-4xl md:text-5xl lg:text-6xl serif font-black leading-tight tracking-tight mb-8">
+        Professional{" "}
+        <span className="italic font-light">Chronicles.</span>
       </h2>
 
-      <div className="space-y-12">
+      <div className="space-y-16 border-t border-[var(--ink-color)] pt-8">
         {experiences.map((exp, i) => (
           <motion.div
             key={exp.id}
@@ -35,28 +39,28 @@ const Experience = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.15 }}
-            className="group border-b border-slate-700/50 pb-8 last:border-0"
+            className="group border-b border-[var(--ink-color)] pb-12 last:border-0"
           >
-            <div className="flex justify-between items-start mb-4 gap-4">
-              <div className="flex items-start gap-4 w-2/3">
+            <div className="flex flex-col md:flex-row justify-between items-start mb-6 gap-6">
+              <div className="flex items-start gap-6 md:w-2/3">
                 {exp.img && (
                   <img
                     src={exp.img}
                     alt={exp.company}
-                    className="org-logo hidden sm:block"
+                    className="w-16 h-16 object-contain border border-[var(--ink-color)] p-1 hidden sm:block grayscale group-hover:grayscale-0 transition-all duration-500"
                   />
                 )}
-                <div>
-                  <h3 className="text-2xl serif font-bold group-hover:text-accent-red transition-colors">
+                <div className="flex flex-col gap-1">
+                  <h3 className="text-3xl md:text-4xl serif font-black group-hover:text-accent-red transition-colors duration-300">
                     {exp.role}
                   </h3>
-                  <p className="text-sm font-black uppercase tracking-widest text-slate-500">
+                  <p className="text-sm font-bold uppercase tracking-[0.2em] text-slate-500">
                     {exp.company}
                   </p>
                 </div>
               </div>
-              <div className="text-right shrink-0">
-                <p className="text-xs font-bold bg-slate-100 dark:bg-slate-800 px-2 py-1 inline-block border border-slate-700">
+              <div className="md:text-right shrink-0">
+                <p className="text-[10px] font-black uppercase tracking-widest border border-[var(--ink-color)] text-[var(--ink-color)] px-3 py-1 inline-block">
                   {exp.date}
                 </p>
               </div>
@@ -64,11 +68,11 @@ const Experience = () => {
 
             {/* Impact Badges */}
             {IMPACT_BADGES[exp.id] && (
-              <div className="flex flex-wrap gap-2 mb-4">
+              <div className="flex flex-wrap gap-2 mb-8">
                 {IMPACT_BADGES[exp.id].map((badge, j) => (
                   <span
                     key={j}
-                    className="text-[9px] font-black uppercase tracking-tighter bg-accent-red text-white px-2 py-0.5 border border-accent-red"
+                    className="text-[10px] font-black uppercase tracking-widest bg-[var(--ink-color)] text-[var(--paper-bg)] px-3 py-1 hover:bg-[var(--accent-red)] hover:text-white transition-colors duration-300 cursor-default"
                   >
                     ★ {badge}
                   </span>
@@ -76,11 +80,11 @@ const Experience = () => {
               </div>
             )}
 
-            <div className="columns-1 md:columns-2 gap-8 mt-4 text-sm leading-relaxed column-rule">
+            <div className="columns-1 md:columns-2 gap-12 text-sm leading-relaxed column-rule text-[var(--ink-color)]">
               {exp.desc.map((bullet, j) => (
                 <p
                   key={j}
-                  className="mb-4 first-letter:text-2xl first-letter:serif first-letter:float-left first-letter:mr-2"
+                  className="mb-6 first-letter:text-4xl first-letter:serif first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:font-black first-letter:text-accent-red"
                 >
                   {bullet}
                 </p>

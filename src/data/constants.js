@@ -1,6 +1,7 @@
 // Project assets
 import Oasis from "../assets/Projects/oasis.webp";
 import First from "../assets/Projects/first.png";
+import Second from "../assets/Projects/second.png";
 
 import Project1 from "../assets/Projects/project-1.webp";
 import Project2 from "../assets/Projects/project2.webp";
@@ -206,14 +207,14 @@ export const experiences = [
     role: "Fullstack Developer",
     company: "Sidlabs LLP",
     date: "Oct 2024 - Current",
-   desc: [
-  "Architected and deployed highly responsive web applications—including a complex evaluation dashboard—using React, Next.js, Node.js, and MongoDB, improving overall application performance by 20%.",
-  "Engineered secure backend architectures to seamlessly integrate advanced LLMs (Gemini and Llama 3), enabling automated data extraction and complex AI-driven workflows.",
-  "Designed and implemented scalable RESTful APIs in Node.js and Express, optimizing heavy bi-directional data flows and reducing server response times by 15%.",
-  "Optimized frontend and backend performance for high-traffic applications through React code splitting, lazy loading, and targeted MongoDB database indexing techniques.",
-  "Managed end-to-end product development in a fast-paced environment, taking complete ownership from initial database schema design to final UI deployment.",
-  "Contributed to custom component libraries and design systems, ensuring strict UI consistency, improving code maintainability, and increasing overall user engagement by 20%."
-]
+    desc: [
+      "Architected and deployed highly responsive web applications—including a complex evaluation dashboard—using React, Next.js, Node.js, and MongoDB, improving overall application performance by 20%.",
+      "Engineered secure backend architectures to seamlessly integrate advanced LLMs (Gemini and Llama 3), enabling automated data extraction and complex AI-driven workflows.",
+      "Designed and implemented scalable RESTful APIs in Node.js and Express, optimizing heavy bi-directional data flows and reducing server response times by 15%.",
+      "Optimized frontend and backend performance for high-traffic applications through React code splitting, lazy loading, and targeted MongoDB database indexing techniques.",
+      "Managed end-to-end product development in a fast-paced environment, taking complete ownership from initial database schema design to final UI deployment.",
+      "Contributed to custom component libraries and design systems, ensuring strict UI consistency, improving code maintainability, and increasing overall user engagement by 20%."
+    ]
   },
   {
     id: 2,
@@ -283,6 +284,29 @@ export const projects = [
     webapp: "https://samvaad-live.netlify.app/",
   },
   {
+    id: 11,
+    title: "Rakshak Paws Foundation",
+    date: "Sep 2026",
+    description:
+      "A Premium MERN-Stack Animal Rescue & Fundraising Platform. Features a highly immersive, cinematic UI for donors and a secure dashboard for admins. Facilitates animal rescues, manages campaigns, and processes donations.",
+    image: Second,
+    tags: [
+      "React Js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Redis",
+      "BullMQ",
+      "Razorpay",
+      "Tailwind CSS",
+      "Framer Motion"
+
+    ],
+    category: "mern stack",
+    github: "https://github.com/Sachinnegi825/Rakshak-Paws-Foundation",
+    webapp: "https://rakshak-paws.netlify.app/",
+  },
+  {
     id: 1,
     title: "Oasis Platform",
     date: "Apr 2025 - Aug 2025",
@@ -304,9 +328,9 @@ export const projects = [
     id: 2,
     date: "Jul 2024 - Aug 2024",
     title: "BlogSpace Editorial",
-  description: "A high-performance minimalist blogging engine inspired by Swiss design principles. Features secure HttpOnly cookie authentication with token rotation, Cloudinary-integrated media handling, and a sophisticated threaded commentary system with author verification.",
-  image: Project6,
-  tags: ["React 19", "Node.js", "Tailwind 4.0", "MongoDB", "Cloudinary", "Framer Motion"],
+    description: "A high-performance minimalist blogging engine inspired by Swiss design principles. Features secure HttpOnly cookie authentication with token rotation, Cloudinary-integrated media handling, and a sophisticated threaded commentary system with author verification.",
+    image: Project6,
+    tags: ["React 19", "Node.js", "Tailwind 4.0", "MongoDB", "Cloudinary", "Framer Motion"],
     category: "mern stack",
     github: "https://github.com/Sachinnegi825/Mern-Stack-Blog-App",
     webapp: "https://blogspace-mern.netlify.app/",
