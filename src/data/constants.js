@@ -33,7 +33,7 @@ import lighthouseSVG from "../assets/Skills/lighthouse.svg";
 import netlifySVG from "../assets/Skills/netlify.svg";
 import renderSVG from "../assets/Skills/render.svg";
 
-import ResumePDF from "../assets/About/sachin_negi_resume.pdf";
+import ResumePDF from "../assets/About/sachinnegi_resume.pdf";
 
 export const Bio = {
   name: "Sachin Negi",
