@@ -298,6 +298,7 @@ export const projects = [
       "Redis",
       "BullMQ",
       "Razorpay",
+      "Cloudinary",
       "Tailwind CSS",
       "Framer Motion",
       "AWS S3",
