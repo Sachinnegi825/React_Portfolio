@@ -299,12 +299,13 @@ export const projects = [
       "BullMQ",
       "Razorpay",
       "Tailwind CSS",
-      "Framer Motion"
-
+      "Framer Motion",
+      "AWS S3",
+      "AWS CloudFront"
     ],
     category: "mern stack",
     github: "https://github.com/Sachinnegi825/Rakshak-Paws-Foundation",
-    webapp: "https://rakshak-paws.netlify.app/",
+    webapp: "https://d1v8c2x8gxrmg9.cloudfront.net/",
   },
   {
     id: 1,
